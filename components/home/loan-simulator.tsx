@@ -161,6 +161,7 @@ export function LoanSimulator() {
             {t.simulator.resultNote}
           </p>
           <Button
+            size="lg"
             className="mt-6 bg-accent text-accent-foreground hover:bg-accent/90"
             render={<Link href="/demande-credit" />}
           >

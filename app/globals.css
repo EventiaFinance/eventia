@@ -38,25 +38,25 @@
 
 :root {
   color-scheme: light;
-  /* EVENTIA FINANZ theme: deep navy primary, warm gold accent, clean neutrals */
-  --background: oklch(0.99 0.002 90);
-  --foreground: oklch(0.22 0.03 255);
+  /* EVENTIA FINANCE theme: Charcoal primary (#363636) and Rust-Red accent (#CF4E2A) */
+  --background: oklch(0.99 0.003 36);
+  --foreground: oklch(23.503% 0.00003 271.152);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.22 0.03 255);
+  --card-foreground: oklch(0.33 0 0);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.22 0.03 255);
-  --primary: oklch(0.3 0.07 258);
-  --primary-foreground: oklch(0.985 0.005 90);
-  --secondary: oklch(0.955 0.008 255);
-  --secondary-foreground: oklch(0.3 0.07 258);
-  --muted: oklch(0.955 0.008 255);
-  --muted-foreground: oklch(0.5 0.02 255);
-  --accent: oklch(0.76 0.13 75);
-  --accent-foreground: oklch(0.25 0.05 258);
+  --popover-foreground: oklch(0.33 0 0);
+  --primary: oklch(20.463% 0.00002 271.152);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.96 0.005 36.1);
+  --secondary-foreground: oklch(0.33 0 0);
+  --muted: oklch(0.96 0.005 36.1);
+  --muted-foreground: oklch(0.55 0.01 36.1);
+  --accent: oklch(0.59 0.17 36.1);
+  --accent-foreground: oklch(0.99 0 0);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.91 0.008 255);
-  --input: oklch(0.91 0.008 255);
-  --ring: oklch(0.76 0.13 75);
+  --border: oklch(0.92 0.01 36.1);
+  --input: oklch(0.92 0.01 36.1);
+  --ring: oklch(0.59 0.17 36.1);
   --success: oklch(0.62 0.14 155);
   --radius: 0.625rem;
 }

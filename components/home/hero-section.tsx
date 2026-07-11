@@ -15,9 +15,6 @@ export function HeroSection() {
         className="absolute inset-0 size-full object-cover opacity-25"
       />
       <div className="relative mx-auto flex max-w-6xl flex-col items-center gap-6 px-4 py-20 text-center md:py-28">
-        <p className="rounded-full border border-accent/50 bg-accent/10 px-4 py-1.5 text-sm font-medium text-accent">
-          {t.hero.subtitle}
-        </p>
         <h1 className="max-w-3xl text-balance text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
           {t.hero.welcome}
         </h1>

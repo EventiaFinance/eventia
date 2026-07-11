@@ -11,14 +11,25 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'EVENTIA FINANZ | Solutions de financement personnalisées',
+  title: 'EVENTIA FINANCE | Solutions de financement personnalisées',
   description:
-    'EVENTIA FINANZ, votre spécialiste du financement depuis 2007. Prêts personnels, prêts immobiliers, rachat de crédit avec un accompagnement expert et personnalisé.',
+    'EVENTIA FINANCE. Prêts personnels, prêts immobiliers, rachat de crédit avec un accompagnement expert et personnalisé.',
   generator: 'v0.app',
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/icon-light-32x32.png', sizes: '32x32', media: '(prefers-color-scheme: light)' },
+      { url: '/icon-dark-32x32.png', sizes: '32x32', media: '(prefers-color-scheme: dark)' },
+    ],
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180' },
+    ],
+  },
 }
 
 export const viewport: Viewport = {
-  themeColor: '#1e2f52',
+  themeColor: '#363636',
 }
 
 export default function RootLayout({

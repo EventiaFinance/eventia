@@ -2,8 +2,9 @@
 
 import { useLanguage } from '@/lib/language-context'
 
-// TODO: replace with the real WhatsApp number (international format, no spaces)
-const WHATSAPP_NUMBER = '33600000000'
+// Configurable WhatsApp number via environment variable (fallback to default)
+const rawNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '33774514389'
+const WHATSAPP_NUMBER = rawNumber.replace(/\D/g, '')
 
 export function WhatsAppButton() {
   const { t } = useLanguage()

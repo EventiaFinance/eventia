@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Mail, Menu, X, ChevronDown, Landmark } from 'lucide-react'
+import { Mail, Menu, X, ChevronDown } from 'lucide-react'
 import { useLanguage } from '@/lib/language-context'
 import { locales, type Locale } from '@/lib/translations'
 import { Button } from '@/components/ui/button'
@@ -14,9 +14,12 @@ export function SiteHeader() {
 
   const navLinks = [
     { href: '/', label: t.nav.home },
-    { href: '/#services', label: t.nav.services },
-    { href: '/#simulateur', label: t.nav.simulator },
-    { href: '/demande-credit', label: t.nav.request },
+    { href: '/prets-personnels', label: t.nav.personal },
+    { href: '/prets-immobiliers', label: t.nav.mortgage },
+    { href: '/rachat-credit', label: t.nav.rachat },
+    { href: '/credit-travaux', label: t.nav.travaux },
+    { href: '/assurances', label: t.nav.assurances },
+    { href: '/a-propos', label: t.nav.about },
   ]
 
   return (
@@ -25,11 +28,11 @@ export function SiteHeader() {
       <div className="bg-primary text-primary-foreground">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-2 text-sm">
           <a
-            href="mailto:infos@eventiafinanz.com"
+            href="mailto:infos@eventiafinance.com"
             className="flex items-center gap-2 hover:underline"
           >
             <Mail className="size-4" aria-hidden="true" />
-            <span>infos@eventiafinanz.com</span>
+            <span>infos@eventiafinance.com</span>
           </a>
           <div className="relative">
             <button
@@ -82,21 +85,11 @@ export function SiteHeader() {
       {/* Main nav */}
       <div className="border-b border-border bg-card">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
-          <Link href="/" className="flex items-center gap-2">
-            <span className="flex size-10 items-center justify-center rounded-md bg-primary text-primary-foreground">
-              <Landmark className="size-5" aria-hidden="true" />
-            </span>
-            <span className="leading-tight">
-              <span className="block text-lg font-bold tracking-tight text-primary">
-                EVENTIA <span className="text-accent">FINANZ</span>
-              </span>
-              <span className="block text-xs text-muted-foreground">
-                {t.hero.subtitle}
-              </span>
-            </span>
+          <Link href="/" className="flex items-center">
+            <img src="/logo.svg" className="h-10 w-auto object-contain" alt="EVENTIA FINANCE" />
           </Link>
 
-          <nav className="hidden items-center gap-6 md:flex" aria-label="Navigation principale">
+          <nav className="hidden items-center gap-4 lg:flex" aria-label="Navigation principale">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -113,7 +106,7 @@ export function SiteHeader() {
 
           <button
             type="button"
-            className="md:hidden"
+            className="lg:hidden"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-expanded={mobileOpen}
             aria-label={mobileOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
@@ -124,7 +117,7 @@ export function SiteHeader() {
 
         {mobileOpen && (
           <nav
-            className="border-t border-border bg-card px-4 py-4 md:hidden"
+            className="border-t border-border bg-card px-4 py-4 lg:hidden"
             aria-label="Navigation mobile"
           >
             <ul className="flex flex-col gap-3">

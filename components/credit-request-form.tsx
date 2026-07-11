@@ -9,20 +9,47 @@ const inputClass =
   'h-10 w-full rounded-md border border-input bg-card px-3 text-sm placeholder:text-muted-foreground focus-visible:outline-2 focus-visible:outline-ring'
 
 export function CreditRequestForm() {
-  const { t } = useLanguage()
+  const { t, locale } = useLanguage()
   const [email, setEmail] = useState('')
   const [confirmEmail, setConfirmEmail] = useState('')
   const [error, setError] = useState<string | null>(null)
   const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
     if (email.trim().toLowerCase() !== confirmEmail.trim().toLowerCase()) {
       setError(t.form.emailMismatch)
       return
     }
     setError(null)
-    setSubmitted(true)
+    setLoading(true)
+
+    try {
+      const formData = new FormData(e.currentTarget)
+      const data = Object.fromEntries(formData.entries())
+
+      const res = await fetch('/api/demande-credit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+
+      const result = await res.json()
+
+      if (!res.ok || result.error) {
+        throw new Error(result.error || 'Erreur lors de la soumission.')
+      }
+
+      setSubmitted(true)
+    } catch (err: any) {
+      console.error(err)
+      setError(err instanceof Error ? err.message : 'Une erreur est survenue, veuillez réessayer.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -190,8 +217,10 @@ export function CreditRequestForm() {
             )}
 
             <div className="flex flex-col gap-3">
-              <Button type="submit" size="lg" className="w-full sm:w-auto">
-                {t.form.submit}
+              <Button type="submit" size="lg" className="w-full sm:w-auto" disabled={loading}>
+                {loading
+                  ? (locale === 'fr' ? 'Envoi en cours...' : locale === 'en' ? 'Sending...' : locale === 'de' ? 'Wird gesendet...' : 'Enviando...')
+                  : t.form.submit}
               </Button>
               <p className="text-xs text-muted-foreground">{t.form.required}</p>
             </div>
@@ -250,10 +279,10 @@ export function CreditRequestForm() {
           <p className="mt-2 text-sm text-muted-foreground">{t.form.questionDesc}</p>
           <p className="mt-1 text-sm font-medium">{t.form.hours}</p>
           <a
-            href="mailto:infos@eventiafinanz.com"
+            href="mailto:infos@eventiafinance.com"
             className="mt-3 inline-block text-sm font-semibold text-primary underline"
           >
-            infos@eventiafinanz.com
+            infos@eventiafinance.com
           </a>
         </div>
       </aside>

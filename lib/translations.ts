@@ -11,15 +11,17 @@ export const translations = {
   fr: {
     nav: {
       home: 'Accueil',
-      services: 'Nos Services',
-      simulator: 'Simulateur',
-      request: 'Demande de Crédit',
-      contact: 'Contact',
-      apply: 'Faire une demande',
+      personal: 'Prêts Personnels',
+      mortgage: 'Prêts Immobiliers',
+      rachat: 'Rachat de Crédit',
+      travaux: 'Crédit Travaux',
+      assurances: 'Assurances',
+      about: 'À Propos',
+      apply: 'Faire une demande de prêt',
     },
     hero: {
-      welcome: 'Bienvenue chez EVENTIA FINANZ',
-      subtitle: 'Votre spécialiste du financement depuis 2007',
+      welcome: 'Bienvenue chez EVENTIA FINANCE',
+      subtitle: 'Votre spécialiste du financement',
       description:
         'Découvrez nos services de financement avec un accompagnement expert et personnalisé.',
       cta1: 'Faire une demande',
@@ -45,10 +47,10 @@ export const translations = {
       discover: 'Découvrir',
     },
     why: {
-      title: 'Pourquoi Choisir EVENTIA FINANZ',
+      title: 'Pourquoi Choisir EVENTIA FINANCE',
       security: {
         title: 'Sécurité & Confiance',
-        desc: "Établissement agréé avec plus de 17 ans d'expérience en financement",
+        desc: "Établissement agréé avec plus de 19 ans d'expérience en financement",
       },
       speed: {
         title: 'Rapidité & Efficacité',
@@ -96,14 +98,14 @@ export const translations = {
         {
           name: 'Marie Dubois',
           city: 'Paris',
-          text: 'Excellent service, rapide et professionnel. Je recommande EVENTIA FINANZ !',
+          text: 'Excellent service, rapide et professionnel. Je recommande EVENTIA FINANCE !',
           type: 'Prêt personnel',
           amount: '25 000 €',
         },
         {
           name: 'Pierre Martin',
           city: 'Lyon',
-          text: "Grâce à EVENTIA FINANZ, j'ai obtenu mon prêt immobilier aux meilleures conditions.",
+          text: "Grâce à EVENTIA FINANCE, j'ai obtenu mon prêt immobilier aux meilleures conditions.",
           type: 'Prêt immobilier',
           amount: '250 000 €',
         },
@@ -166,7 +168,7 @@ export const translations = {
       advisorsDesc: '43 experts à votre service du lundi au vendredi',
       advantages: 'Nos Avantages',
       advantagesList: [
-        "17 ans d'expérience",
+        "19 ans d'expérience",
         '43 conseillers experts',
         'Taux compétitifs',
         'Accompagnement personnalisé',
@@ -178,7 +180,7 @@ export const translations = {
       emailMismatch: 'Les adresses e-mail ne correspondent pas.',
     },
     footer: {
-      tagline: 'Votre partenaire de confiance pour tous vos projets de financement depuis 2007.',
+      tagline: 'Votre partenaire de confiance pour tous vos projets de financement.',
       navigation: 'Navigation',
       services: 'Services',
       legalInfo: 'Informations Société',
@@ -198,19 +200,114 @@ export const translations = {
         'Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement avant de vous engager.',
     },
     whatsapp: 'Discuter sur WhatsApp',
+    pages: {
+      personal: {
+        title: 'Prêts Personnels',
+        subtitle: 'Financez tous vos projets personnels',
+        desc: 'Le prêt personnel est un crédit à la consommation sans justificatif d\'utilisation. Vous disposez librement de la somme empruntée pour financer tous vos projets de vie (auto, voyages, événements, équipements).',
+        advantagesTitle: 'Avantages des prêts personnels',
+        advantages: [
+          'Utilisation libre des fonds sans justificatif',
+          'Réponse rapide et étude de dossier sous 48h',
+          'Taux compétitifs et mensualités fixes',
+          'Sans garantie ni caution requise',
+          'Accompagnement personnalisé tout au long du prêt',
+          'Étude gratuite et sans engagement de votre dossier',
+        ]
+      },
+      mortgage: {
+        title: 'Prêts Immobiliers',
+        subtitle: 'Réalisez votre projet immobilier',
+        desc: 'Devenez propriétaire dans les meilleures conditions. Que ce soit pour l\'achat d\'une résidence principale, secondaire ou un investissement locatif, nos experts négocient pour vous le meilleur taux.',
+        advantagesTitle: 'Avantages de nos prêts immobiliers',
+        advantages: [
+          'Taux fixes et variables extrêmement compétitifs',
+          'Financement flexible adapté à vos revenus',
+          'Accompagnement complet de la simulation à la signature chez le notaire',
+          'Négociation des meilleures conditions de crédit auprès de nos partenaires',
+          'Solutions d\'assurance emprunteur sur mesure',
+          'Étude gratuite de votre dossier de financement',
+        ],
+        featuresTitle: 'Caractéristiques des prêts immobiliers',
+        features: [
+          { title: 'Montants élevés', desc: 'Financement allant jusqu\'à 80% de la valeur du bien' },
+          { title: 'Tous projets', desc: 'Achat dans le neuf, l\'ancien, construction ou rénovation' },
+          { title: 'Sécurisé', desc: 'Garanties adaptées pour sécuriser votre investissement' },
+          { title: 'Taux avantageux', desc: 'Les meilleurs taux négociés du marché' },
+        ]
+      },
+      rachat: {
+        title: 'Rachat de Crédit',
+        subtitle: 'Regroupez tous vos crédits',
+        desc: 'Le rachat de crédit consiste à rassembler tous vos prêts en cours (immobilier, conso, renouvelable) en un seul crédit. Vous réduisez ainsi vos mensualités et simplifiez la gestion de votre budget.',
+        advantagesTitle: 'Avantages du rachat de crédit',
+        advantages: [
+          'Diminuez vos mensualités globales jusqu\'à 60%',
+          'Simplifiez votre gestion avec un seul prélèvement par mois',
+          'Bénéficiez d\'un taux d\'intérêt unique et potentiellement meilleur',
+          'Une seule mensualité fixe et prévisible',
+          'Possibilité d\'inclure une trésorerie supplémentaire pour un nouveau projet',
+          'Conseil personnalisé et étude gratuite',
+        ]
+      },
+      travaux: {
+        title: 'Crédit Travaux',
+        subtitle: 'Financez vos projets de rénovation',
+        desc: 'Le crédit travaux vous permet de financer tous vos projets d\'aménagement, de rénovation ou de décoration de votre logement. Qu\'il s\'agisse de travaux d\'économie d\'énergie ou d\'agrandissement, nous avons la solution.',
+        advantagesTitle: 'Avantages du crédit travaux',
+        advantages: [
+          'Financement de 100% de vos devis de travaux',
+          'Taux préférentiels pour les travaux d\'économie d\'énergie',
+          'Durée de remboursement flexible et adaptée à votre budget',
+          'Déblocage des fonds simple et rapide sur présentation des devis',
+          'Aucun apport personnel requis',
+          'Étude et conseils d\'experts gratuits',
+        ]
+      },
+      assurances: {
+        title: 'Nos Assurances',
+        subtitle: 'Protégez ce qui compte le plus pour vous',
+        desc: 'Pour sécuriser vos financements et protéger vos proches, nous vous proposons une gamme complète de contrats d\'assurance adaptés à vos besoins et au meilleur prix du marché.',
+        advantagesTitle: 'Nos solutions de protection',
+        advantages: [
+          'Assurance emprunteur : sécurisez votre prêt en cas de coup dur (décès, invalidité)',
+          'Assurance habitation : protégez votre patrimoine immobilier et vos biens',
+          'Complémentaire santé : des garanties adaptées pour couvrir vos dépenses médicales',
+          'Tarifs négociés parmi les plus bas du marché',
+          'Changement d\'assurance emprunteur simple et rapide',
+          'Conseillers dédiés pour la gestion de vos contrats',
+        ]
+      },
+      about: {
+        title: 'À Propos de Nous',
+        subtitle: 'Votre partenaire financier de confiance',
+        desc: 'Depuis notre création, notre mission est de vous accompagner dans la réalisation de tous vos projets en vous apportant les solutions de financement les plus adaptées et les plus performantes.',
+        advantagesTitle: 'Pourquoi nous faire confiance',
+        advantages: [
+          'Plus de 19 ans d\'expérience dans le domaine du crédit et du courtage',
+          'Une équipe de 43 conseillers experts et à votre écoute',
+          'Une totale indépendance vis-à-vis des banques pour défendre vos intérêts',
+          'Plus de 10 000 clients satisfaits et accompagnés avec succès',
+          'Des valeurs de transparence, de proximité et d\'efficacité',
+          'Un service client de qualité récompensé pour sa réactivité',
+        ]
+      }
+    },
   },
   en: {
     nav: {
       home: 'Home',
-      services: 'Our Services',
-      simulator: 'Simulator',
-      request: 'Credit Request',
-      contact: 'Contact',
-      apply: 'Apply now',
+      personal: 'Personal Loans',
+      mortgage: 'Mortgage Loans',
+      rachat: 'Debt Consolidation',
+      travaux: 'Renovation Loans',
+      assurances: 'Insurance',
+      about: 'About Us',
+      apply: 'Apply for a loan',
     },
     hero: {
-      welcome: 'Welcome to EVENTIA FINANZ',
-      subtitle: 'Your financing specialist since 2007',
+      welcome: 'Welcome to EVENTIA FINANCE',
+      subtitle: 'Your financing specialist',
       description:
         'Discover our financing services with expert and personalized support.',
       cta1: 'Apply now',
@@ -236,10 +333,10 @@ export const translations = {
       discover: 'Discover',
     },
     why: {
-      title: 'Why Choose EVENTIA FINANZ',
+      title: 'Why Choose EVENTIA FINANCE',
       security: {
         title: 'Security & Trust',
-        desc: 'Licensed institution with over 17 years of financing experience',
+        desc: 'Licensed institution with over 19 years of financing experience',
       },
       speed: {
         title: 'Speed & Efficiency',
@@ -287,14 +384,14 @@ export const translations = {
         {
           name: 'Marie Dubois',
           city: 'Paris',
-          text: 'Excellent service, fast and professional. I recommend EVENTIA FINANZ!',
+          text: 'Excellent service, fast and professional. I recommend EVENTIA FINANCE!',
           type: 'Personal loan',
           amount: '€25,000',
         },
         {
           name: 'Pierre Martin',
           city: 'Lyon',
-          text: 'Thanks to EVENTIA FINANZ, I got my mortgage at the best conditions.',
+          text: 'Thanks to EVENTIA FINANCE, I got my mortgage at the best conditions.',
           type: 'Mortgage loan',
           amount: '€250,000',
         },
@@ -357,7 +454,7 @@ export const translations = {
       advisorsDesc: '43 experts at your service Monday to Friday',
       advantages: 'Our Advantages',
       advantagesList: [
-        '17 years of experience',
+        '19 years of experience',
         '43 expert advisors',
         'Competitive rates',
         'Personalized support',
@@ -369,7 +466,7 @@ export const translations = {
       emailMismatch: 'Email addresses do not match.',
     },
     footer: {
-      tagline: 'Your trusted partner for all your financing projects since 2007.',
+      tagline: 'Your trusted partner for all your financing projects.',
       navigation: 'Navigation',
       services: 'Services',
       legalInfo: 'Company Information',
@@ -389,19 +486,114 @@ export const translations = {
         'A loan is a commitment and must be repaid. Check your repayment capacity before committing.',
     },
     whatsapp: 'Chat on WhatsApp',
+    pages: {
+      personal: {
+        title: 'Personal Loans',
+        subtitle: 'Finance all your personal projects',
+        desc: 'A personal loan is a consumer credit without proof of usage. You are free to use the borrowed sum to finance all your life projects (car, travel, events, equipment).',
+        advantagesTitle: 'Advantages of personal loans',
+        advantages: [
+          'Free use of funds without proof of expense',
+          'Fast response and file review within 48 hours',
+          'Competitive rates and fixed monthly payments',
+          'No collateral or guarantor required',
+          'Personalized support throughout the loan',
+          'Free and non-binding study of your application',
+        ]
+      },
+      mortgage: {
+        title: 'Mortgage Loans',
+        subtitle: 'Realize your real estate project',
+        desc: 'Become a homeowner under the best conditions. Whether for the purchase of a primary residence, a secondary residence, or a rental investment, our experts negotiate the best rate for you.',
+        advantagesTitle: 'Advantages of our mortgage loans',
+        advantages: [
+          'Extremely competitive fixed and variable rates',
+          'Flexible financing tailored to your income',
+          'Complete support from simulation to signing at the notary',
+          'Negotiation of the best credit conditions with our partners',
+          'Tailor-made borrower insurance solutions',
+          'Free study of your financing file',
+        ],
+        featuresTitle: 'Characteristics of mortgage loans',
+        features: [
+          { title: 'High amounts', desc: 'Financing up to 80% of the property value' },
+          { title: 'All projects', desc: 'Purchase of new, old, construction or renovation properties' },
+          { title: 'Secure', desc: 'Suitable guarantees to secure your investment' },
+          { title: 'Advantageous rates', desc: 'The best negotiated market rates' },
+        ]
+      },
+      rachat: {
+        title: 'Debt Consolidation',
+        subtitle: 'Consolidate all your credits',
+        desc: 'Debt consolidation (or credit regrouping) consists of gathering all your active loans (mortgage, consumer, revolving) into a single credit. You reduce your monthly payments and simplify your budget management.',
+        advantagesTitle: 'Advantages of debt consolidation',
+        advantages: [
+          'Reduce your overall monthly payments by up to 60%',
+          'Simplify your management with a single debit per month',
+          'Benefit from a single and potentially better interest rate',
+          'A single fixed and predictable monthly payment',
+          'Possibility to include extra cash for a new project',
+          'Personalized advice and free study',
+        ]
+      },
+      travaux: {
+        title: 'Renovation Loans',
+        subtitle: 'Finance your renovation projects',
+        desc: 'A renovation loan allows you to finance all layout, renovation, or decoration projects for your home. Whether it is energy saving or home extension work, we have the solution.',
+        advantagesTitle: 'Advantages of renovation loans',
+        advantages: [
+          'Financing of 100% of your work estimates',
+          'Preferential rates for energy-saving works',
+          'Flexible repayment period adapted to your budget',
+          'Simple and quick release of funds on presentation of estimates',
+          'No personal contribution required',
+          'Free expert study and advice',
+        ]
+      },
+      assurances: {
+        title: 'Our Insurance',
+        subtitle: 'Protect what matters most to you',
+        desc: 'To secure your financing and protect your loved ones, we offer a comprehensive range of insurance policies tailored to your needs at the best market prices.',
+        advantagesTitle: 'Our protection solutions',
+        advantages: [
+          'Borrower insurance: secure your loan in case of hard times (death, disability)',
+          'Home insurance: protect your real estate assets and belongings',
+          'Health insurance: adapted guarantees to cover your medical expenses',
+          'Negotiated rates among the lowest in the market',
+          'Simple and fast borrower insurance transfer',
+          'Dedicated advisors for managing your contracts',
+        ]
+      },
+      about: {
+        title: 'About Us',
+        subtitle: 'Your trusted financial partner',
+        desc: 'Since our creation, our mission has been to support you in realizing all your projects by providing you with the most suitable and efficient financing solutions.',
+        advantagesTitle: 'Why trust us',
+        advantages: [
+          'Over 19 years of experience in the field of credit and brokerage',
+          'A team of 43 expert advisors at your service',
+          'Complete independence from banks to defend your interests',
+          'More than 10,000 satisfied and successfully supported clients',
+          'Values of transparency, proximity, and efficiency',
+          'A quality client service rewarded for its responsiveness',
+        ]
+      }
+    },
   },
   de: {
     nav: {
       home: 'Startseite',
-      services: 'Unsere Leistungen',
-      simulator: 'Simulator',
-      request: 'Kreditantrag',
-      contact: 'Kontakt',
-      apply: 'Antrag stellen',
+      personal: 'Privatkredite',
+      mortgage: 'Immobilienkredite',
+      rachat: 'Kreditumschuldung',
+      travaux: 'Renovierungskredite',
+      assurances: 'Versicherungen',
+      about: 'Über Uns',
+      apply: 'Kredit anfragen',
     },
     hero: {
-      welcome: 'Willkommen bei EVENTIA FINANZ',
-      subtitle: 'Ihr Finanzierungsspezialist seit 2007',
+      welcome: 'Willkommen bei EVENTIA FINANCE',
+      subtitle: 'Ihr Finanzierungsspezialist',
       description:
         'Entdecken Sie unsere Finanzierungsdienstleistungen mit fachkundiger und persönlicher Betreuung.',
       cta1: 'Antrag stellen',
@@ -427,10 +619,10 @@ export const translations = {
       discover: 'Entdecken',
     },
     why: {
-      title: 'Warum EVENTIA FINANZ wählen',
+      title: 'Warum EVENTIA FINANCE wählen',
       security: {
         title: 'Sicherheit & Vertrauen',
-        desc: 'Zugelassenes Institut mit über 17 Jahren Finanzierungserfahrung',
+        desc: 'Zugelassenes Institut mit über 19 Jahren Finanzierungserfahrung',
       },
       speed: {
         title: 'Schnelligkeit & Effizienz',
@@ -478,14 +670,14 @@ export const translations = {
         {
           name: 'Marie Dubois',
           city: 'Paris',
-          text: 'Ausgezeichneter Service, schnell und professionell. Ich empfehle EVENTIA FINANZ!',
+          text: 'Ausgezeichneter Service, schnell und professionell. Ich empfehle EVENTIA FINANCE!',
           type: 'Privatkredit',
           amount: '25.000 €',
         },
         {
           name: 'Pierre Martin',
           city: 'Lyon',
-          text: 'Dank EVENTIA FINANZ habe ich meinen Immobilienkredit zu besten Konditionen erhalten.',
+          text: 'Dank EVENTIA FINANCE habe ich meinen Immobilienkredit zu besten Konditionen erhalten.',
           type: 'Immobilienkredit',
           amount: '250.000 €',
         },
@@ -548,7 +740,7 @@ export const translations = {
       advisorsDesc: '43 Experten stehen Ihnen von Montag bis Freitag zur Verfügung',
       advantages: 'Unsere Vorteile',
       advantagesList: [
-        '17 Jahre Erfahrung',
+        '19 Jahre Erfahrung',
         '43 Expertenberater',
         'Wettbewerbsfähige Zinsen',
         'Persönliche Betreuung',
@@ -560,7 +752,7 @@ export const translations = {
       emailMismatch: 'Die E-Mail-Adressen stimmen nicht überein.',
     },
     footer: {
-      tagline: 'Ihr vertrauenswürdiger Partner für alle Ihre Finanzierungsprojekte seit 2007.',
+      tagline: 'Ihr vertrauenswürdiger Partner für alle Ihre Finanzierungsprojekte.',
       navigation: 'Navigation',
       services: 'Leistungen',
       legalInfo: 'Unternehmensinformationen',
@@ -580,19 +772,114 @@ export const translations = {
         'Ein Kredit ist eine Verpflichtung und muss zurückgezahlt werden. Prüfen Sie Ihre Rückzahlungsfähigkeit, bevor Sie sich verpflichten.',
     },
     whatsapp: 'Auf WhatsApp chatten',
+    pages: {
+      personal: {
+        title: 'Privatkredite',
+        subtitle: 'Finanzieren Sie alle Ihre persönlichen Projekte',
+        desc: 'Ein Privatkredit ist ein Konsumkredit ohne Verwendungsnachweis. Sie können den geliehenen Betrag frei zur Finanzierung all Ihrer Lebensprojekte (Auto, Reisen, Veranstaltungen, Ausstattung) verwenden.',
+        advantagesTitle: 'Vorteile von Privatkrediten',
+        advantages: [
+          'Freie Verwendung der Mittel ohne Verwendungsnachweis',
+          'Schnelle Antwort und Prüfung des Dossiers innerhalb von 48 Stunden',
+          'Wettbewerbsfähige Zinsen und feste monatliche Raten',
+          'Keine Sicherheiten oder Bürgen erforderlich',
+          'Persönliche Betreuung während der gesamten Kreditlaufzeit',
+          'Kostenlose und unverbindliche Prüfung Ihres Antrags',
+        ]
+      },
+      mortgage: {
+        title: 'Immobilienkredite',
+        subtitle: 'Realisieren Sie Ihr Immobilienprojekt',
+        desc: 'Werden Sie zu besten Konditionen Hauseigentümer. Ob für den Kauf eines Hauptwohnsitzes, eines Zweitwohnsitzes oder eine Mietinvestition – unsere Experten verhandeln für Sie den besten Zinssatz.',
+        advantagesTitle: 'Vorteile unserer Immobilienkredite',
+        advantages: [
+          'Äußerst wettbewerbsfähige feste und variable Zinssätze',
+          'Flexible Finanzierung, angepasst an Ihr Einkommen',
+          'Komplette Betreuung von der Simulation bis zur Unterzeichnung beim Notar',
+          'Verhandlung der besten Kreditkonditionen mit unseren Partnern',
+          'Maßgeschneiderte Restschuldversicherungslösungen',
+          'Kostenlose Prüfung Ihres Finanzierungsdossiers',
+        ],
+        featuresTitle: 'Eigenschaften von Immobilienkrediten',
+        features: [
+          { title: 'Hohe Beträge', desc: 'Finanzierung bis zu 80 % des Immobilienwerts' },
+          { title: 'Alle Projekte', desc: 'Kauf von Neubauten, Altbauten, Bau oder Renovierung' },
+          { title: 'Sicher', desc: 'Geeignete Garantien zur Absicherung Ihrer Investition' },
+          { title: 'Günstige Zinsen', desc: 'Die besten verhandelten Marktzinsen' },
+        ]
+      },
+      rachat: {
+        title: 'Kreditumschuldung',
+        subtitle: 'Fassen Sie all Ihre Kredite zusammen',
+        desc: 'Die Umschuldung (oder Zusammenlegung von Krediten) besteht darin, alle Ihre laufenden Kredite (Immobilien-, Konsum-, revolvierende Kredite) zu einem einzigen Kredit zusammenzufassen. Sie senken Ihre monatlichen Raten und vereinfachen Ihre Budgetverwaltung.',
+        advantagesTitle: 'Vorteile der Kreditumschuldung',
+        advantages: [
+          'Senken Sie Ihre monatlichen Gesamtraten um bis zu 60 %',
+          'Vereinfachen Sie Ihre Verwaltung mit nur einer Lastschrift pro Monat',
+          'Profitieren Sie von einem einzigen und potenziell besseren Zinssatz',
+          'Eine einzige feste und vorhersehbare Monatsrate',
+          'Möglichkeit der Einbindung einer zusätzlichen Barreserve für ein neues Projekt',
+          'Persönliche Beratung und kostenlose Prüfung',
+        ]
+      },
+      travaux: {
+        title: 'Renovierungskredite',
+        subtitle: 'Finanzieren Sie Ihre Renovierungsprojekte',
+        desc: 'Ein Renovierungskredit ermöglicht Ihnen die Finanzierung aller Einrichtungs-, Renovierungs- oder Dekorationsprojekte für Ihr Zuhause. Ob Energiespar- oder Hauserweiterungsarbeiten – wir haben die Lösung.',
+        advantagesTitle: 'Vorteile von Renovierungskrediten',
+        advantages: [
+          'Finanzierung von 100 % Ihrer Kostenvoranschläge',
+          'Vorzugszinsen für Energiesparmaßnahmen',
+          'Flexible Rückzahlungsdauer, angepasst an Ihr Budget',
+          'Einfache und schnelle Auszahlung der Mittel nach Vorlage der Kostenvoranschläge',
+          'Kein Eigenkapital erforderlich',
+          'Kostenlose Prüfung und Beratung durch Experten',
+        ]
+      },
+      assurances: {
+        title: 'Unsere Versicherungen',
+        subtitle: 'Schützen Sie, was Ihnen am wichtigsten ist',
+        desc: 'Um Ihre Finanzierungen abzusichern und Ihre Angehörigen zu schützen, bieten wir eine umfassende Palette an Versicherungen an, die auf Ihre Bedürfnisse zugeschnitten sind und zu den besten Marktpreisen angeboten werden.',
+        advantagesTitle: 'Unsere Schutzlösungen',
+        advantages: [
+          'Restschuldversicherung: Sichern Sie Ihren Kredit bei Schicksalsschlägen (Tod, Erwerbsunfähigkeit) ab',
+          'Hausratversicherung: Schützen Sie Ihr Immobilienvermögen und Ihren Besitz',
+          'Krankenzusatzversicherung: Angepasste Garantien zur Abdeckung Ihrer medizinischen Kosten',
+          'Verhandelte Tarife, die zu den niedrigsten am Markt gehören',
+          'Einfacher und schneller Wechsel der Restschuldversicherung',
+          'Persönliche Berater für die Verwaltung Ihrer Verträge',
+        ]
+      },
+      about: {
+        title: 'Über Uns',
+        subtitle: 'Ihr vertrauenswürdiger Finanzpartner',
+        desc: 'Seit unserer Gründung ist es unsere Mission, Sie bei der Umsetzung all Ihrer Projekte zu begleiten, indem wir Ihnen die am besten geeigneten und effizientesten Finanzierungslösungen anbieten.',
+        advantagesTitle: 'Warum Sie uns vertrauen können',
+        advantages: [
+          'Über 19 Jahre Erfahrung im Bereich Kredit und Vermittlung',
+          'Ein Team von 43 erfahrenen Beratern zu Ihren Diensten',
+          'Völlige Unabhängigkeit von Banken, um Ihre Interessen zu vertreten',
+          'Mehr als 10.000 zufriedene und erfolgreich betreute Kunden',
+          'Werte wie Transparenz, Nähe und Effizienz',
+          'Ein erstklassiger Kundenservice, der für seine Reaktionsschnelligkeit ausgezeichnet wurde',
+        ]
+      }
+    },
   },
   es: {
     nav: {
       home: 'Inicio',
-      services: 'Nuestros Servicios',
-      simulator: 'Simulador',
-      request: 'Solicitud de Crédito',
-      contact: 'Contacto',
-      apply: 'Solicitar ahora',
+      personal: 'Préstamos Personales',
+      mortgage: 'Préstamos Hipotecarios',
+      rachat: 'Reagrupación de Crédito',
+      travaux: 'Crédito Reformas',
+      assurances: 'Seguros',
+      about: 'Sobre Nosotros',
+      apply: 'Solicitar un préstamo',
     },
     hero: {
-      welcome: 'Bienvenido a EVENTIA FINANZ',
-      subtitle: 'Su especialista en financiación desde 2007',
+      welcome: 'Bienvenido a EVENTIA FINANCE',
+      subtitle: 'Su especialista en financiación',
       description:
         'Descubra nuestros servicios de financiación con un acompañamiento experto y personalizado.',
       cta1: 'Solicitar ahora',
@@ -618,10 +905,10 @@ export const translations = {
       discover: 'Descubrir',
     },
     why: {
-      title: 'Por Qué Elegir EVENTIA FINANZ',
+      title: 'Por Qué Elegir EVENTIA FINANCE',
       security: {
         title: 'Seguridad y Confianza',
-        desc: 'Establecimiento autorizado con más de 17 años de experiencia en financiación',
+        desc: 'Establecimiento autorizado con más de 19 años de experiencia en financiación',
       },
       speed: {
         title: 'Rapidez y Eficacia',
@@ -669,14 +956,14 @@ export const translations = {
         {
           name: 'Marie Dubois',
           city: 'París',
-          text: 'Excelente servicio, rápido y profesional. ¡Recomiendo EVENTIA FINANZ!',
+          text: 'Excelente servicio, rápido y profesional. ¡Recomiendo EVENTIA FINANCE!',
           type: 'Préstamo personal',
           amount: '25.000 €',
         },
         {
           name: 'Pierre Martin',
           city: 'Lyon',
-          text: 'Gracias a EVENTIA FINANZ, obtuve mi préstamo hipotecario en las mejores condiciones.',
+          text: 'Gracias a EVENTIA FINANCE, obtuve mi préstamo hipotecario en las mejores condiciones.',
           type: 'Préstamo hipotecario',
           amount: '250.000 €',
         },
@@ -739,7 +1026,7 @@ export const translations = {
       advisorsDesc: '43 expertos a su servicio de lunes a viernes',
       advantages: 'Nuestras Ventajas',
       advantagesList: [
-        '17 años de experiencia',
+        '19 años de experiencia',
         '43 asesores expertos',
         'Tasas competitivas',
         'Acompañamiento personalizado',
@@ -751,7 +1038,7 @@ export const translations = {
       emailMismatch: 'Las direcciones de correo no coinciden.',
     },
     footer: {
-      tagline: 'Su socio de confianza para todos sus proyectos de financiación desde 2007.',
+      tagline: 'Su socio de confianza para todos sus proyectos de financiación.',
       navigation: 'Navegación',
       services: 'Servicios',
       legalInfo: 'Información de la Empresa',
@@ -771,6 +1058,99 @@ export const translations = {
         'Un crédito le compromete y debe ser reembolsado. Verifique su capacidad de reembolso antes de comprometerse.',
     },
     whatsapp: 'Chatear por WhatsApp',
+    pages: {
+      personal: {
+        title: 'Préstamos Personales',
+        subtitle: 'Financie todos sus proyectos personales',
+        desc: 'El préstamo personal es un crédito de consumo sin justificante de finalidad. Dispone libremente del importe prestado para financiar todos sus proyectos de vida (coche, viajes, eventos, equipamiento).',
+        advantagesTitle: 'Ventajas de los préstamos personales',
+        advantages: [
+          'Libre uso de los fondos sin justificar',
+          'Respuesta rápida y estudio del expediente en 48h',
+          'Tasas competitivas y cuotas mensuales fijas',
+          'Sin necesidad de garantías ni avales',
+          'Acompañamiento personalizado a lo largo del préstamo',
+          'Estudio gratuito y sin compromiso de su expediente',
+        ]
+      },
+      mortgage: {
+        title: 'Préstamos Hipotecarios',
+        subtitle: 'Realice su proyecto inmobiliario',
+        desc: 'Conviértase en propietario en las mejores condiciones. Ya sea para la compra de una vivienda habitual, segunda residencia o una inversión de alquiler, nuestros expertos negocian la mejor tasa para usted.',
+        advantagesTitle: 'Ventajas de nuestros préstamos hipotecarios',
+        advantages: [
+          'Tasas fijas y variables extremadamente competitivas',
+          'Financiación flexible adaptada a sus ingresos',
+          'Apoyo completo desde la simulación hasta la firma ante notario',
+          'Negociación de las mejores condiciones de crédito con nuestros socios',
+          'Soluciones de seguros para prestatarios a medida',
+          'Estudio gratuito de su expediente de financiación',
+        ],
+        featuresTitle: 'Características de los préstamos hipotecarios',
+        features: [
+          { title: 'Importes elevados', desc: 'Financiación de hasta el 80% del valor del inmueble' },
+          { title: 'Todos los proyectos', desc: 'Compra de obra nueva, usada, construcción o reformas' },
+          { title: 'Seguro', desc: 'Garantías adecuadas para asegurar su inversión' },
+          { title: 'Tasas ventajosas', desc: 'Las mejores tasas negociadas del mercado' },
+        ]
+      },
+      rachat: {
+        title: 'Reagrupación de Crédito',
+        subtitle: 'Reagrupe todos sus créditos',
+        desc: 'La reagrupación de crédito (o consolidación de deudas) consiste en reunir todos sus préstamos activos (hipotecarios, de consumo, tarjetas) en un único crédito. Reduce sus cuotas mensuales y simplifica la gestión de su presupuesto.',
+        advantagesTitle: 'Ventajas de la reagrupación de crédito',
+        advantages: [
+          'Reduzca sus cuotas mensuales globales hasta un 60%',
+          'Simplifique su gestión con un solo adeudo al mes',
+          'Benefíciese de una tasa de interés única y potencialmente mejor',
+          'Una sola cuota mensual fija y predecible',
+          'Posibilidad de incluir dinero extra para un nuevo proyecto',
+          'Asesoramiento personalizado y estudio gratuito',
+        ]
+      },
+      travaux: {
+        title: 'Crédito Reformas',
+        subtitle: 'Financie sus proyectos de reforma',
+        desc: 'Un crédito para reformas le permite financiar cualquier proyecto de acondicionamiento, reforma o decoración de su hogar. Ya sean obras de ahorro energético o de ampliación, tenemos la solución.',
+        advantagesTitle: 'Ventajas del crédito reformas',
+        advantages: [
+          'Financiación del 100% del presupuesto de sus obras',
+          'Tasas preferenciales para obras de eficiencia energética',
+          'Plazo de devolución flexible adaptado a su presupuesto',
+          'Desembolso de fondos sencillo y rápido presentando presupuestos',
+          'No se requiere aportación personal',
+          'Estudio gratuito y asesoramiento de expertos',
+        ]
+      },
+      assurances: {
+        title: 'Nuestros Seguros',
+        subtitle: 'Proteja lo que más le importa',
+        desc: 'Para asegurar sus financiaciones y proteger a sus seres queridos, le ofrecemos una amplia gama de pólizas de seguro adaptadas a sus necesidades y al mejor precio del mercado.',
+        advantagesTitle: 'Nuestras soluciones de protección',
+        advantages: [
+          'Seguro de amortización: asegure su préstamo ante imprevistos (fallecimiento, invalidez)',
+          'Seguro de hogar: proteja su patrimonio inmobiliario y sus pertenencias',
+          'Seguro de salud: coberturas adaptadas para cubrir sus gastos médicos',
+          'Tarifas negociadas entre las más bajas del mercado',
+          'Cambio de seguro de préstamo sencillo y rápido',
+          'Asesores dedicados para la gestión de sus contratos',
+        ]
+      },
+      about: {
+        title: 'Sobre Nosotros',
+        subtitle: 'Su socio financiero de confianza',
+        desc: 'Desde nuestra creación, nuestra misión ha sido acompañarle en la realización de todos sus proyectos aportándole las soluciones de financiación más adecuadas y eficientes.',
+        advantagesTitle: 'Por qué confiar en nosotros',
+        advantages: [
+          'Más de 19 años de experiencia en el sector del crédito y la intermediación',
+          'Un equipo de 43 asesores expertos a su servicio',
+          'Total independencia de los bancos para defender sus intereses',
+          'Más de 10.000 clientes satisfechos y apoyados con éxito',
+          'Valores de transparencia, cercanía y eficacia',
+          'Un servicio de atención al cliente de calidad premiado por su capacidad de respuesta',
+        ]
+      }
+    },
   },
 } as const
 

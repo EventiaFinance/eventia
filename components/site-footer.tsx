@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Landmark, MapPin, Mail } from 'lucide-react'
+import { MapPin, Mail } from 'lucide-react'
 import { useLanguage } from '@/lib/language-context'
 
 export function SiteFooter() {
@@ -12,13 +12,8 @@ export function SiteFooter() {
       <div className="mx-auto max-w-6xl px-4 py-12">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <div className="flex items-center gap-2">
-              <span className="flex size-9 items-center justify-center rounded-md bg-primary-foreground/10">
-                <Landmark className="size-5 text-accent" aria-hidden="true" />
-              </span>
-              <span className="text-lg font-bold">
-                EVENTIA <span className="text-accent">FINANZ</span>
-              </span>
+            <div className="flex items-center">
+              <img src="/logo.svg" className="h-10 w-auto object-contain bg-white px-3 py-1.5 rounded-lg" alt="EVENTIA FINANCE" />
             </div>
             <p className="mt-4 text-sm leading-relaxed text-primary-foreground/80">
               {t.footer.tagline}
@@ -30,8 +25,8 @@ export function SiteFooter() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="size-4 shrink-0 text-accent" aria-hidden="true" />
-                <a href="mailto:infos@eventiafinanz.com" className="hover:underline">
-                  infos@eventiafinanz.com
+                <a href="mailto:infos@eventiafinance.com" className="hover:underline">
+                  infos@eventiafinance.com
                 </a>
               </li>
             </ul>
@@ -42,26 +37,13 @@ export function SiteFooter() {
               {t.footer.navigation}
             </h3>
             <ul className="mt-4 flex flex-col gap-2 text-sm text-primary-foreground/80">
-              <li>
-                <Link href="/" className="hover:underline">
-                  {t.nav.home}
-                </Link>
-              </li>
-              <li>
-                <Link href="/#services" className="hover:underline">
-                  {t.nav.services}
-                </Link>
-              </li>
-              <li>
-                <Link href="/#simulateur" className="hover:underline">
-                  {t.nav.simulator}
-                </Link>
-              </li>
-              <li>
-                <Link href="/demande-credit" className="hover:underline">
-                  {t.nav.request}
-                </Link>
-              </li>
+              <li><Link href="/" className="hover:underline">{t.nav.home}</Link></li>
+              <li><Link href="/prets-personnels" className="hover:underline">{t.nav.personal}</Link></li>
+              <li><Link href="/prets-immobiliers" className="hover:underline">{t.nav.mortgage}</Link></li>
+              <li><Link href="/rachat-credit" className="hover:underline">{t.nav.rachat}</Link></li>
+              <li><Link href="/credit-travaux" className="hover:underline">{t.nav.travaux}</Link></li>
+              <li><Link href="/assurances" className="hover:underline">{t.nav.assurances}</Link></li>
+              <li><Link href="/a-propos" className="hover:underline">{t.nav.about}</Link></li>
             </ul>
           </div>
 
@@ -100,7 +82,7 @@ export function SiteFooter() {
           <p className="mt-3 text-center text-xs text-primary-foreground/60">
             {'© '}
             {new Date().getFullYear()}
-            {' EVENTIA FINANZ. '}
+            {' EVENTIA FINANCE. '}
             {t.footer.rights}
           </p>
         </div>
