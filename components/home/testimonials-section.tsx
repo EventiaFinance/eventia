@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { Star } from 'lucide-react'
 import { useLanguage } from '@/lib/language-context'
 import { Button } from '@/components/ui/button'
+import { PartnersSection } from './partners-section'
 
 export function TestimonialsSection() {
   const { t } = useLanguage()
@@ -83,6 +84,7 @@ export function TestimonialsSection() {
           </div>
         </div>
       </section>
+      <PartnersSection />
 
       {/* Final CTA */}
       <section className="bg-primary text-primary-foreground">

@@ -5,6 +5,7 @@ import { HeroSection } from '@/components/home/hero-section'
 import { ServicesSection } from '@/components/home/services-section'
 import { LoanSimulator } from '@/components/home/loan-simulator'
 import { TestimonialsSection } from '@/components/home/testimonials-section'
+import { PartnersSection } from '@/components/home/partners-section'
 
 export default function HomePage() {
   return (
