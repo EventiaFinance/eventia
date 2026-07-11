@@ -38,17 +38,17 @@ export function SiteHeader() {
             <button
               type="button"
               onClick={() => setLangOpen(!langOpen)}
-              className="flex items-center gap-1.5 rounded-md px-2 py-1 hover:bg-primary-foreground/10"
+              className="flex items-center gap-2 rounded-md px-2.5 py-1.5 text-sm hover:bg-primary-foreground/10"
               aria-expanded={langOpen}
               aria-haspopup="listbox"
             >
-              <span className="font-medium">
+              <span className="text-base select-none">
                 {locales.find((l) => l.code === locale)?.flag}
               </span>
-              <span className="hidden sm:inline">
+              <span className="hidden sm:inline font-medium">
                 {locales.find((l) => l.code === locale)?.label}
               </span>
-              <ChevronDown className="size-4" aria-hidden="true" />
+              <ChevronDown className="size-4 opacity-75" aria-hidden="true" />
             </button>
             {langOpen && (
               <ul
@@ -65,14 +65,14 @@ export function SiteHeader() {
                         setLocale(l.code as Locale)
                         setLangOpen(false)
                       }}
-                      className={`flex w-full items-center gap-2 px-3 py-2 text-left text-sm hover:bg-secondary ${
+                      className={`flex w-full items-center gap-2.5 px-3 py-2.5 text-left text-sm hover:bg-secondary ${
                         locale === l.code ? 'bg-secondary font-semibold' : ''
                       }`}
                     >
-                      <span className="font-mono text-xs text-muted-foreground">
+                      <span className="text-base select-none">
                         {l.flag}
                       </span>
-                      {l.label}
+                      <span>{l.label}</span>
                     </button>
                   </li>
                 ))}
