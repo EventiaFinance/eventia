@@ -85,6 +85,14 @@ export function SiteFooter() {
             {' EVENTIA FINANCE. '}
             {t.footer.rights}
           </p>
+          <div className="mt-4 flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-primary-foreground/60">
+            <Link href="/mentions-legales" className="hover:text-primary-foreground hover:underline">
+              {t.footer.legalNotices}
+            </Link>
+            <Link href="/politique-de-confidentialite" className="hover:text-primary-foreground hover:underline">
+              {t.footer.privacyPolicy}
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

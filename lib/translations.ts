@@ -205,6 +205,8 @@ export const translations = {
       },
       address: '55 Place Charles de Gaulle, 59500 Douai, France',
       rights: 'Tous droits réservés.',
+      privacyPolicy: 'Politique de Confidentialité',
+      legalNotices: 'Mentions Légales',
       warning:
         'Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement avant de vous engager.',
     },
@@ -499,6 +501,8 @@ export const translations = {
       },
       address: '55 Place Charles de Gaulle, 59500 Douai, France',
       rights: 'All rights reserved.',
+      privacyPolicy: 'Privacy Policy',
+      legalNotices: 'Legal Notices',
       warning:
         'A loan is a commitment and must be repaid. Check your repayment capacity before committing.',
     },
@@ -793,6 +797,8 @@ export const translations = {
       },
       address: '55 Place Charles de Gaulle, 59500 Douai, Frankreich',
       rights: 'Alle Rechte vorbehalten.',
+      privacyPolicy: 'Datenschutzerklärung',
+      legalNotices: 'Impressum',
       warning:
         'Ein Kredit ist eine Verpflichtung und muss zurückgezahlt werden. Prüfen Sie Ihre Rückzahlungsfähigkeit, bevor Sie sich verpflichten.',
     },
@@ -1087,6 +1093,8 @@ export const translations = {
       },
       address: '55 Place Charles de Gaulle, 59500 Douai, Francia',
       rights: 'Todos los derechos reservados.',
+      privacyPolicy: 'Política de Privacidad',
+      legalNotices: 'Aviso Legal',
       warning:
         'Un crédito le compromete y debe ser reembolsado. Verifique su capacidad de reembolso antes de comprometerse.',
     },
@@ -1381,6 +1389,8 @@ export const translations = {
       },
       address: '55 Place Charles de Gaulle, 59500 Douai, França',
       rights: 'Todos os direitos reservados.',
+      privacyPolicy: 'Política de Privacidade',
+      legalNotices: 'Avisos Legais',
       warning:
         'Um crédito compromete-o e deve ser reembolsado. Verifique a sua capacidade de reembolso antes de se comprometer.',
     },
