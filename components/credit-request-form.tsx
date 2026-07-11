@@ -279,10 +279,10 @@ export function CreditRequestForm() {
           <p className="mt-2 text-sm text-muted-foreground">{t.form.questionDesc}</p>
           <p className="mt-1 text-sm font-medium">{t.form.hours}</p>
           <a
-            href="mailto:infos@eventiafinance.com"
+            href="mailto:info@eventiafinance.com"
             className="mt-3 inline-block text-sm font-semibold text-primary underline"
           >
-            infos@eventiafinance.com
+            info@eventiafinance.com
           </a>
         </div>
       </aside>

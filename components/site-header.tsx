@@ -28,11 +28,11 @@ export function SiteHeader() {
       <div className="bg-primary text-primary-foreground">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-2 text-sm">
           <a
-            href="mailto:infos@eventiafinance.com"
+            href="mailto:info@eventiafinance.com"
             className="flex items-center gap-2 hover:underline"
           >
             <Mail className="size-4" aria-hidden="true" />
-            <span>infos@eventiafinance.com</span>
+            <span>info@eventiafinance.com</span>
           </a>
           <div className="relative">
             <button
@@ -65,9 +65,8 @@ export function SiteHeader() {
                         setLocale(l.code as Locale)
                         setLangOpen(false)
                       }}
-                      className={`flex w-full items-center gap-2.5 px-3 py-2.5 text-left text-sm hover:bg-secondary ${
-                        locale === l.code ? 'bg-secondary font-semibold' : ''
-                      }`}
+                      className={`flex w-full items-center gap-2.5 px-3 py-2.5 text-left text-sm hover:bg-secondary ${locale === l.code ? 'bg-secondary font-semibold' : ''
+                        }`}
                     >
                       <span className="text-base select-none">
                         {l.flag}

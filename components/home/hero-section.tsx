@@ -1,19 +1,70 @@
 'use client'
 
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useLanguage } from '@/lib/language-context'
 import { Button } from '@/components/ui/button'
 
+const CAROUSEL_IMAGES = [
+  '/images/hero-carousel-1.png',
+  '/images/hero-carousel-2.png',
+  '/images/hero-carousel-3.png',
+  '/images/hero-carousel-4.png',
+]
+
 export function HeroSection() {
   const { t } = useLanguage()
+  const [currentIndex, setCurrentIndex] = useState(0)
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % CAROUSEL_IMAGES.length)
+    }, 5000) // Transition every 5 seconds
+
+    return () => clearInterval(timer)
+  }, [currentIndex])
 
   return (
     <section className="relative overflow-hidden bg-primary text-primary-foreground">
-      <img
-        src="/images/hero-finance.png"
-        alt=""
-        className="absolute inset-0 size-full object-cover opacity-25"
-      />
+      {/* Background Images Carousel */}
+      <div className="absolute inset-0 size-full">
+        {CAROUSEL_IMAGES.map((src, idx) => (
+          <img
+            key={src}
+            src={src}
+            alt=""
+            className={`absolute inset-0 size-full object-cover transition-opacity duration-1000 ease-in-out ${
+              idx === currentIndex ? 'opacity-25' : 'opacity-0'
+            }`}
+          />
+        ))}
+        {/* Subtle overlay to guarantee readability */}
+        <div className="absolute inset-0 bg-primary/20" />
+      </div>
+
+      {/* Vertical Carousel Indicators */}
+      <div 
+        className="absolute right-4 md:right-6 top-1/2 -translate-y-1/2 z-20 flex flex-col gap-2.5"
+        role="tablist"
+        aria-label="Carousel slides"
+      >
+        {CAROUSEL_IMAGES.map((_, idx) => (
+          <button
+            key={idx}
+            type="button"
+            role="tab"
+            aria-selected={idx === currentIndex}
+            aria-label={`Slide ${idx + 1}`}
+            onClick={() => setCurrentIndex(idx)}
+            className={`w-1.5 rounded-full transition-all duration-300 outline-none ${
+              idx === currentIndex 
+                ? 'h-8 bg-accent' 
+                : 'h-4 bg-white/40 hover:bg-white/80'
+            }`}
+          />
+        ))}
+      </div>
+
       <div className="relative mx-auto flex max-w-6xl flex-col items-center gap-6 px-4 py-20 text-center md:py-28">
         <h1 className="max-w-3xl text-balance text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
           {t.hero.welcome}

@@ -44,6 +44,14 @@ export const translations = {
         title: 'Rachat de Crédit',
         desc: 'Simplifiez vos remboursements et diminuez vos mensualités',
       },
+      travaux: {
+        title: 'Crédit Travaux',
+        desc: 'Financez vos projets de rénovation et d\'aménagement de votre logement',
+      },
+      assurances: {
+        title: 'Assurances',
+        desc: 'Protégez vos proches et vos biens avec nos solutions sur mesure',
+      },
       discover: 'Découvrir',
     },
     why: {
@@ -329,6 +337,14 @@ export const translations = {
       consolidation: {
         title: 'Debt Consolidation',
         desc: 'Simplify your repayments and reduce your monthly payments',
+      },
+      travaux: {
+        title: 'Renovation Loans',
+        desc: 'Finance your renovation and home improvement projects',
+      },
+      assurances: {
+        title: 'Insurance',
+        desc: 'Protect your loved ones and your assets with our custom insurance solutions',
       },
       discover: 'Discover',
     },
@@ -616,6 +632,14 @@ export const translations = {
         title: 'Umschuldung',
         desc: 'Vereinfachen Sie Ihre Rückzahlungen und senken Sie Ihre Monatsraten',
       },
+      travaux: {
+        title: 'Renovierungskredite',
+        desc: 'Finanzieren Sie Ihre Renovierungs- und Modernisierungsprojekte',
+      },
+      assurances: {
+        title: 'Versicherungen',
+        desc: 'Schützen Sie Ihre Angehörigen und Ihr Eigentum mit unseren maßgeschneiderten Versicherungslösungen',
+      },
       discover: 'Entdecken',
     },
     why: {
@@ -901,6 +925,14 @@ export const translations = {
       consolidation: {
         title: 'Reunificación de Deudas',
         desc: 'Simplifique sus reembolsos y reduzca sus cuotas mensuales',
+      },
+      travaux: {
+        title: 'Crédito Reformas',
+        desc: 'Financie sus proyectos de reforma y acondicionamiento del hogar',
+      },
+      assurances: {
+        title: 'Seguros',
+        desc: 'Proteja a sus seres queridos y sus bienes con nuestras soluciones de seguro a medida',
       },
       discover: 'Descubrir',
     },

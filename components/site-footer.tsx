@@ -25,8 +25,8 @@ export function SiteFooter() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="size-4 shrink-0 text-accent" aria-hidden="true" />
-                <a href="mailto:infos@eventiafinance.com" className="hover:underline">
-                  infos@eventiafinance.com
+                <a href="mailto:info@eventiafinance.com" className="hover:underline">
+                  info@eventiafinance.com
                 </a>
               </li>
             </ul>

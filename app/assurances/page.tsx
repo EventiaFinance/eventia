@@ -19,10 +19,15 @@ export default function InsurancesPage() {
       <SiteHeader />
       <main className="bg-background min-h-screen">
         {/* Banner */}
-        <section className="bg-primary text-primary-foreground">
-          <div className="mx-auto max-w-6xl px-4 py-14 text-center md:py-16">
-            <h1 className="text-balance text-3xl font-bold md:text-4xl">{pageData.title}</h1>
-            <p className="mx-auto mt-4 max-w-2xl text-pretty leading-relaxed text-primary-foreground/80">
+        <section className="relative overflow-hidden bg-primary text-primary-foreground">
+          <img
+            src="/images/service-assurances.png"
+            alt=""
+            className="absolute inset-0 size-full object-cover opacity-20"
+          />
+          <div className="relative mx-auto max-w-6xl px-4 py-16 text-center md:py-20">
+            <h1 className="text-balance text-3xl font-bold md:text-4xl lg:text-5xl">{pageData.title}</h1>
+            <p className="mx-auto mt-4 max-w-2xl text-pretty text-base md:text-lg leading-relaxed text-primary-foreground/85">
               {pageData.subtitle}
             </p>
           </div>
