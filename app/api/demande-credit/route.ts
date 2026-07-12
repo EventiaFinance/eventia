@@ -212,9 +212,9 @@ export async function POST(request: Request) {
     const compiledTemplate = Handlebars.compile(emailTemplate)
     const htmlOutput = compiledTemplate(templateData)
 
-    const smtpHost = process.env.SMTP_HOST || 'mail.eventiafinance.com'
+    const smtpHost = process.env.SMTP_HOST
     const smtpPort = Number(process.env.SMTP_PORT) || 465
-    const smtpUser = process.env.SMTP_USER || 'contact@eventiafinance.com'
+    const smtpUser = process.env.SMTP_USER
     const smtpPass = process.env.SMTP_PASS
     const smtpTo = process.env.SMTP_TO || 'info@eventiafinance.com'
 
