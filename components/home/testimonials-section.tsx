@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Star } from 'lucide-react'
+import { Star, ThumbsUp, Clock } from 'lucide-react'
 import { useLanguage } from '@/lib/language-context'
 import { Button } from '@/components/ui/button'
 import { PartnersSection } from './partners-section'
@@ -66,17 +66,18 @@ export function TestimonialsSection() {
               {t.guarantees.title}
             </h3>
             <div className="mt-6 grid gap-6 sm:grid-cols-3">
-              <div className="flex flex-col items-center gap-1 rounded-xl bg-card p-6 text-center shadow-sm">
-                <span className="text-3xl font-bold text-accent-foreground">
-                  <span className="text-primary">98%</span>
-                </span>
+              <div className="flex flex-col items-center gap-2 rounded-xl bg-card p-6 text-center shadow-sm">
+                <ThumbsUp className="size-7 text-accent" aria-hidden="true" />
+                <span className="text-3xl font-bold text-primary">98%</span>
                 <span className="text-sm text-muted-foreground">{t.guarantees.satisfied}</span>
               </div>
-              <div className="flex flex-col items-center gap-1 rounded-xl bg-card p-6 text-center shadow-sm">
+              <div className="flex flex-col items-center gap-2 rounded-xl bg-card p-6 text-center shadow-sm">
+                <Clock className="size-7 text-accent" aria-hidden="true" />
                 <span className="text-3xl font-bold text-primary">24h</span>
                 <span className="text-sm text-muted-foreground">{t.guarantees.response}</span>
               </div>
-              <div className="flex flex-col items-center gap-1 rounded-xl bg-card p-6 text-center shadow-sm">
+              <div className="flex flex-col items-center gap-2 rounded-xl bg-card p-6 text-center shadow-sm">
+                <Star className="size-7 text-accent fill-accent" aria-hidden="true" />
                 <span className="text-3xl font-bold text-primary">4.8/5</span>
                 <span className="text-sm text-muted-foreground">{t.guarantees.rating}</span>
               </div>
