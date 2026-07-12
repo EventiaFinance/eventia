@@ -234,21 +234,21 @@ export function CreditRequestForm() {
           <h2 className="text-lg font-semibold text-primary">{t.form.trust}</h2>
           <ul className="mt-4 flex flex-col gap-5">
             <li className="flex gap-3">
-              <ShieldCheck className="mt-0.5 size-5 shrink-0 text-accent-foreground" aria-hidden="true" />
+              <ShieldCheck className="mt-0.5 size-5 shrink-0 text-foreground" aria-hidden="true" />
               <div>
                 <p className="font-medium">{t.form.secure}</p>
                 <p className="text-sm leading-relaxed text-muted-foreground">{t.form.secureDesc}</p>
               </div>
             </li>
             <li className="flex gap-3">
-              <Clock className="mt-0.5 size-5 shrink-0 text-accent-foreground" aria-hidden="true" />
+              <Clock className="mt-0.5 size-5 shrink-0 text-foreground" aria-hidden="true" />
               <div>
                 <p className="font-medium">{t.form.fast}</p>
                 <p className="text-sm leading-relaxed text-muted-foreground">{t.form.fastDesc}</p>
               </div>
             </li>
             <li className="flex gap-3">
-              <Users className="mt-0.5 size-5 shrink-0 text-accent-foreground" aria-hidden="true" />
+              <Users className="mt-0.5 size-5 shrink-0 text-foreground" aria-hidden="true" />
               <div>
                 <p className="font-medium">{t.form.advisors}</p>
                 <p className="text-sm leading-relaxed text-muted-foreground">
@@ -273,7 +273,7 @@ export function CreditRequestForm() {
 
         <div className="rounded-xl border border-border bg-secondary p-6">
           <h2 className="flex items-center gap-2 text-lg font-semibold text-primary">
-            <Phone className="size-5 text-accent-foreground" aria-hidden="true" />
+            <Phone className="size-5 text-foreground" aria-hidden="true" />
             {t.form.question}
           </h2>
           <p className="mt-2 text-sm text-muted-foreground">{t.form.questionDesc}</p>
