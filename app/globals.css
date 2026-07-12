@@ -40,7 +40,7 @@
   color-scheme: light;
   /* EVENTIA FINANCE theme: Charcoal primary (#363636) and Rust-Red accent (#CF4E2A) */
   --background: oklch(0.99 0.003 36);
-  --foreground: oklch(23.503% 0.00003 271.152);
+  --foreground: #1e1e1e;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.33 0 0);
   --popover: oklch(1 0 0);
