@@ -7,10 +7,10 @@ import { useLanguage } from '@/lib/language-context'
 import { Button } from '@/components/ui/button'
 
 const RATES: Record<string, number> = {
-  personal: 4.9,
-  mortgage: 3.4,
-  consolidation: 5.5,
-  auto: 4.2,
+  personal: 2,
+  mortgage: 2,
+  consolidation: 2,
+  auto: 2,
 }
 
 function formatEUR(value: number) {

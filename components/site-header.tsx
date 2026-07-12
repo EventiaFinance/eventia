@@ -85,7 +85,7 @@ export function SiteHeader() {
       <div className="border-b border-border bg-card">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
           <Link href="/" className="flex items-center">
-            <img src="/logo.svg" className="h-10 w-auto object-contain" alt="EVENTIA FINANCE" />
+            <img src="/logo.svg" className="h-16 w-auto object-contain" alt="EVENTIA FINANCE" />
           </Link>
 
           <nav className="hidden items-center gap-4 lg:flex" aria-label="Navigation principale">

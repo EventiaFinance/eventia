@@ -145,7 +145,7 @@ const emailTemplate = `
           </tr>
           <tr>
             <th>Montant souhaité</th>
-            <td>{{amount}} €</td>
+            <td>{{amount}} {{currency}}</td>
           </tr>
           <tr>
             <th>Durée souhaitée</th>
@@ -161,7 +161,7 @@ const emailTemplate = `
           </tr>
           <tr>
             <th>Revenus mensuels nets</th>
-            <td>{{income}} €</td>
+            <td>{{income}} {{currency}}</td>
           </tr>
         </table>
 
@@ -200,13 +200,28 @@ export async function POST(request: Request) {
       other: 'Autre'
     }
 
+    const currencySymbols: Record<string, string> = {
+      EUR: '€',
+      USD: '$',
+      GBP: '£',
+      CHF: 'CHF',
+      CAD: 'C$',
+      AUD: 'A$',
+      JPY: '¥',
+      CNY: '元',
+      INR: '₹',
+      BRL: 'R$'
+    }
+    const currencySymbol = currencySymbols[data.currency as string] || data.currency || '€'
+
     const templateData = {
       ...data,
       creditTypeLabel: creditTypeLabels[data.creditType] || data.creditType,
       professionLabel: professionLabels[data.profession] || data.profession || 'Non spécifié',
       amount: data.amount ? Number(data.amount).toLocaleString('fr-FR') : 'Non renseigné',
       income: data.income ? Number(data.income).toLocaleString('fr-FR') : 'Non renseigné',
-      duration: data.duration || 'Non renseigné'
+      duration: data.duration || 'Non renseigné',
+      currency: currencySymbol
     }
 
     const compiledTemplate = Handlebars.compile(emailTemplate)

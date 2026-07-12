@@ -125,8 +125,8 @@ export function CreditRequestForm() {
               <legend className="mb-3 border-b border-border pb-2 text-lg font-semibold text-primary">
                 {t.form.project}
               </legend>
-              <div className="grid gap-4 sm:grid-cols-2">
-                <div className="flex flex-col gap-1.5 sm:col-span-2">
+              <div className="grid gap-4 sm:grid-cols-3">
+                <div className="flex flex-col gap-1.5 sm:col-span-3">
                   <label htmlFor="creditType" className="text-sm font-medium">
                     {t.form.creditType} *
                   </label>
@@ -138,6 +138,23 @@ export function CreditRequestForm() {
                     <option value="mortgage">{t.simulator.types.mortgage}</option>
                     <option value="consolidation">{t.simulator.types.consolidation}</option>
                     <option value="auto">{t.simulator.types.auto}</option>
+                  </select>
+                </div>
+                <div className="flex flex-col gap-1.5">
+                  <label htmlFor="currency" className="text-sm font-medium">
+                    {t.form.currency} *
+                  </label>
+                  <select id="currency" name="currency" required className={inputClass} defaultValue="EUR">
+                    <option value="EUR">{t.form.currencies.EUR}</option>
+                    <option value="USD">{t.form.currencies.USD}</option>
+                    <option value="GBP">{t.form.currencies.GBP}</option>
+                    <option value="CHF">{t.form.currencies.CHF}</option>
+                    <option value="CAD">{t.form.currencies.CAD}</option>
+                    <option value="AUD">{t.form.currencies.AUD}</option>
+                    <option value="JPY">{t.form.currencies.JPY}</option>
+                    <option value="CNY">{t.form.currencies.CNY}</option>
+                    <option value="INR">{t.form.currencies.INR}</option>
+                    <option value="BRL">{t.form.currencies.BRL}</option>
                   </select>
                 </div>
                 <div className="flex flex-col gap-1.5">
