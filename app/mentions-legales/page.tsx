@@ -30,7 +30,7 @@ export default function LegalNoticesPage() {
           <li><strong>Code APE / NAF :</strong> 6492Z (Autre distribution de crédit)</li>
           <li><strong>N° TVA Intracommunautaire :</strong> FR56 494831191</li>
           <li><strong>RCS :</strong> Enregistrée au Registre du Commerce et des Sociétés de Paris sous le n° 424 264 281</li>
-          <li><strong>Directeur de la publication :</strong> Équipe de Direction d'EVENTIA FINANCE</li>
+          <li><strong>Directeur de la publication :</strong> Joël Gambier</li>
           <li><strong>Contact e-mail :</strong> info@eventiafinance.com</li>
         </ul>
       </div>
