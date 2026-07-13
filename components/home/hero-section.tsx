@@ -40,13 +40,14 @@ export function HeroSection() {
       title: t.hero.welcome,
       description: t.hero.description,
     },
-    {
-      title: t.services.personal.title,
-      description: t.services.personal.desc,
-    },
+
     {
       title: t.services.mortgage.title,
       description: t.services.mortgage.desc,
+    },
+    {
+      title: t.services.personal.title,
+      description: t.services.personal.desc,
     },
     {
       title: t.services.consolidation.title,
@@ -65,9 +66,8 @@ export function HeroSection() {
             key={src}
             src={src}
             alt=""
-            className={`absolute inset-0 size-full object-cover transition-opacity duration-1000 ease-in-out ${
-              idx === currentIndex ? 'opacity-25' : 'opacity-0'
-            }`}
+            className={`absolute inset-0 size-full object-cover transition-opacity duration-1000 ease-in-out ${idx === currentIndex ? 'opacity-25' : 'opacity-0'
+              }`}
           />
         ))}
         {/* Subtle overlay to guarantee readability */}
@@ -75,7 +75,7 @@ export function HeroSection() {
       </div>
 
       {/* Vertical Carousel Indicators */}
-      <div 
+      <div
         className="absolute right-4 md:right-6 top-1/2 -translate-y-1/2 z-20 flex flex-col gap-2.5"
         role="tablist"
         aria-label="Carousel slides"
@@ -88,20 +88,18 @@ export function HeroSection() {
             aria-selected={idx === currentIndex}
             aria-label={`Slide ${idx + 1}`}
             onClick={() => setCurrentIndex(idx)}
-            className={`w-1.5 rounded-full transition-all duration-300 outline-none ${
-              idx === currentIndex 
-                ? 'h-8 bg-accent' 
+            className={`w-1.5 rounded-full transition-all duration-300 outline-none ${idx === currentIndex
+                ? 'h-8 bg-accent'
                 : 'h-4 bg-white/40 hover:bg-white/80'
-            }`}
+              }`}
           />
         ))}
       </div>
 
       <div className="relative mx-auto flex max-w-6xl flex-col items-center gap-6 px-4 py-12 text-center md:py-16">
         <div
-          className={`flex flex-col items-center gap-6 transition-all duration-300 ease-in-out ${
-            fade ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-          }`}
+          className={`flex flex-col items-center gap-6 transition-all duration-300 ease-in-out ${fade ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+            }`}
         >
           <h1 className="max-w-3xl text-balance text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
             {currentSlide.title}
