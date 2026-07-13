@@ -15,6 +15,8 @@ const CAROUSEL_IMAGES = [
 export function HeroSection() {
   const { t } = useLanguage()
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [displayIndex, setDisplayIndex] = useState(0)
+  const [fade, setFade] = useState(true)
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -23,6 +25,36 @@ export function HeroSection() {
 
     return () => clearInterval(timer)
   }, [currentIndex])
+
+  useEffect(() => {
+    setFade(false)
+    const timeout = setTimeout(() => {
+      setDisplayIndex(currentIndex)
+      setFade(true)
+    }, 300)
+    return () => clearTimeout(timeout)
+  }, [currentIndex])
+
+  const slides = [
+    {
+      title: t.hero.welcome,
+      description: t.hero.description,
+    },
+    {
+      title: t.services.personal.title,
+      description: t.services.personal.desc,
+    },
+    {
+      title: t.services.mortgage.title,
+      description: t.services.mortgage.desc,
+    },
+    {
+      title: t.services.consolidation.title,
+      description: t.services.consolidation.desc,
+    },
+  ]
+
+  const currentSlide = slides[displayIndex] || slides[0]
 
   return (
     <section className="relative overflow-hidden bg-primary text-primary-foreground">
@@ -66,12 +98,18 @@ export function HeroSection() {
       </div>
 
       <div className="relative mx-auto flex max-w-6xl flex-col items-center gap-6 px-4 py-20 text-center md:py-28">
-        <h1 className="max-w-3xl text-balance text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
-          {t.hero.welcome}
-        </h1>
-        <p className="max-w-xl text-pretty text-lg leading-relaxed text-primary-foreground/85">
-          {t.hero.description}
-        </p>
+        <div
+          className={`flex flex-col items-center gap-6 transition-all duration-300 ease-in-out ${
+            fade ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+          }`}
+        >
+          <h1 className="max-w-3xl text-balance text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
+            {currentSlide.title}
+          </h1>
+          <p className="max-w-xl text-pretty text-lg leading-relaxed text-primary-foreground/85">
+            {currentSlide.description}
+          </p>
+        </div>
         <div className="flex flex-col gap-3 sm:flex-row">
           <Button
             size="lg"
