@@ -57,7 +57,7 @@ export function HeroSection() {
   const currentSlide = slides[displayIndex] || slides[0]
 
   return (
-    <section className="relative overflow-hidden bg-primary text-primary-foreground">
+    <section className="relative flex min-h-[calc(100vh-120px)] items-center justify-center overflow-hidden bg-primary text-primary-foreground">
       {/* Background Images Carousel */}
       <div className="absolute inset-0 size-full">
         {CAROUSEL_IMAGES.map((src, idx) => (
@@ -97,7 +97,7 @@ export function HeroSection() {
         ))}
       </div>
 
-      <div className="relative mx-auto flex max-w-6xl flex-col items-center gap-6 px-4 py-20 text-center md:py-28">
+      <div className="relative mx-auto flex max-w-6xl flex-col items-center gap-6 px-4 py-12 text-center md:py-16">
         <div
           className={`flex flex-col items-center gap-6 transition-all duration-300 ease-in-out ${
             fade ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
